@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key Gir</title>
+<style>
+  /* Video container */
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  /* Video */
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Kırmızı Yazı */
+  #kirmizi-yazi {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Button */
+  #telegram-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<!-- Video Container -->
+<div class="video-container">
+  <video autoplay loop muted>
+    <source src="https://media.discordapp.net/attachments/1193060952078307348/1207986397919584287/496d61841967c8f10ded068f753f1e22.mp4?ex=65e1a400&is=65cf2f00&hm=208520ffe84ee0a83eae87c74a75f8e931f4408989c288908952aa08928687c3&" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<audio controls autoplay>
+  <source src="https://media.discordapp.net/attachments/1193060952078307348/1207986397919584287/496d61841967c8f10ded068f753f1e22.mp4?ex=65e1a400&is=65cf2f00&hm=208520ffe84ee0a83eae87c74a75f8e931f4408989c288908952aa08928687c3&" type="audio/mpeg">
+  Tarayıcınız audio elementini desteklemiyor.
+</audio>
+
+
+
+<!-- Kırmızı Yazı -->
+<div id="kirmizi-yazi">Selam Ben Showod Telegram @showodiste</div>
+
+<!-- Telegram Button -->
+<button id="telegram-btn" onclick="window.location.href='https://t.me/skor2sanal'">Telegram Kanalı</button>
+
+</body>
+</html>
